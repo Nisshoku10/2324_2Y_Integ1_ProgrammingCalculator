@@ -49,6 +49,13 @@ namespace _2324_2Y_Integ1_2A_Demo
             btnMult.Content = "x";
             btnDiv.Content = "/";
             btnEnter.Content = "=";
+            
+            btnA.Content = "A";
+            btnB.Content = "B";
+            btnC.Content = "C";
+            btnD.Content = "D";
+            btnE.Content = "E";
+            btnF.Content = "F";
         }
 
         private void numberEnter(int x)
@@ -64,7 +71,7 @@ namespace _2324_2Y_Integ1_2A_Demo
             else
                 num2 = int.Parse(input);
 
-            tbCalc.Text = input;
+            //tbCalc.Text = input;
         }
 
         #region KeypadEvents

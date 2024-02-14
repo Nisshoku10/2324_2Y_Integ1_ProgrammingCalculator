@@ -5,41 +5,74 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_2324_2Y_Integ1_2A_Demo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Button x:Name="btn9" Content="X" HorizontalAlignment="Left" Margin="28,78,0,0" VerticalAlignment="Top" 
-        Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn9_Click"/>
-        <Button x:Name="btn8" Content="X" HorizontalAlignment="Left" Margin="83,78,0,0" VerticalAlignment="Top" 
-        Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn8_Click"/>
-        <Button x:Name="btn7" Content="X" HorizontalAlignment="Left" Margin="138,78,0,0" VerticalAlignment="Top" 
-        Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn7_Click"/>
-        <Button x:Name="btn6" Content="X" HorizontalAlignment="Left" Margin="28,133,0,0" VerticalAlignment="Top" 
-        Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn6_Click"/>
-        <Button x:Name="btn5" Content="X" HorizontalAlignment="Left" Margin="83,133,0,0" VerticalAlignment="Top" 
-            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn5_Click"/>
-        <Button x:Name="btn4" Content="X" HorizontalAlignment="Left" Margin="138,133,0,0" VerticalAlignment="Top" 
-            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn4_Click"/>
-        <Button x:Name="btn3" Content="X" HorizontalAlignment="Left" Margin="28,188,0,0" VerticalAlignment="Top" 
-            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn3_Click"/>
-        <Button x:Name="btn2" Content="X" HorizontalAlignment="Left" Margin="83,188,0,0" VerticalAlignment="Top" 
-            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn2_Click"/>
-        <Button x:Name="btn1" Content="X" HorizontalAlignment="Left" Margin="138,188,0,0" VerticalAlignment="Top" 
-            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn1_Click"/>
-        <Button x:Name="btn0" Content="X" HorizontalAlignment="Left" Margin="83,243,0,0" VerticalAlignment="Top" 
-            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn0_Click"/>
-        <Button x:Name="btnAdd" Content="X" HorizontalAlignment="Left" Margin="193,78,0,0" VerticalAlignment="Top" 
-            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btnAdd_Click"/>
-        <Button x:Name="btnMin" Content="X" HorizontalAlignment="Left" Margin="193,133,0,0" VerticalAlignment="Top" 
-            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btnMin_Click"/>
-        <Button x:Name="btnMult" Content="X" HorizontalAlignment="Left" Margin="193,188,0,0" VerticalAlignment="Top" 
-            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btnMult_Click"/>
-        <Button x:Name="btnDiv" Content="X" HorizontalAlignment="Left" Margin="193,243,0,0" VerticalAlignment="Top" 
-            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btnDiv_Click"/>
-        <Button x:Name="btnEnter" Content="X" HorizontalAlignment="Left" Margin="138,243,0,0" VerticalAlignment="Top" 
-            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btnEnter_Click"/>
-        <TextBox x:Name="tbCalc" HorizontalAlignment="Left" Margin="28,22,0,0" TextWrapping="Wrap" Text="" 
-                 VerticalAlignment="Top" Width="215" FontSize="28" IsEnabled="False" HorizontalContentAlignment="Right"/>
+        Title="MainWindow" Height="500" Width="400">
 
+    <Grid>
+        <!--#region MainCalc -->
+        <!-- Main Buttons -->
+        <Button x:Name="btn9" Content="X" HorizontalAlignment="Left" Margin="150,312,0,0" VerticalAlignment="Top" 
+            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn9_Click" FontFamily="Consolas"/>
+        <Button x:Name="btn8" Content="X" HorizontalAlignment="Left" Margin="206,312,0,0" VerticalAlignment="Top" 
+            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn8_Click" FontFamily="Consolas"/>
+        <Button x:Name="btn7" Content="X" HorizontalAlignment="Left" Margin="260,312,0,0" VerticalAlignment="Top" 
+            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn7_Click" FontFamily="Consolas"/>
+        <Button x:Name="btn6" Content="X" HorizontalAlignment="Left" Margin="150,367,0,0" VerticalAlignment="Top" 
+            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn6_Click" FontFamily="Consolas"/>
+        <Button x:Name="btn5" Content="X" HorizontalAlignment="Left" Margin="206,367,0,0" VerticalAlignment="Top" 
+            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn5_Click" FontFamily="Consolas"/>
+        <Button x:Name="btn4" Content="X" HorizontalAlignment="Left" Margin="260,367,0,0" VerticalAlignment="Top" 
+            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn4_Click" FontFamily="Consolas"/>
+        <Button x:Name="btn3" Content="X" HorizontalAlignment="Left" Margin="150,257,0,0" VerticalAlignment="Top" 
+            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn3_Click" FontFamily="Consolas"/>
+        <Button x:Name="btn2" Content="X" HorizontalAlignment="Left" Margin="206,257,0,0" VerticalAlignment="Top" 
+            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn2_Click" FontFamily="Consolas"/>
+        <Button x:Name="btn1" Content="X" HorizontalAlignment="Left" Margin="260,257,0,0" VerticalAlignment="Top" 
+            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn1_Click" FontFamily="Consolas"/>
+        <Button x:Name="btn0" Content="X" HorizontalAlignment="Center" Margin="0,422,0,0" VerticalAlignment="Top" 
+            Width="106" Height="50" FontSize="28" FontWeight="Bold" Click="btn0_Click" FontFamily="Consolas"/>
+
+        <!-- Arithmetic Buttons-->
+        <Button x:Name="btnAdd" Content="X" HorizontalAlignment="Left" Margin="316,312,0,0" VerticalAlignment="Top" 
+            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btnAdd_Click" FontFamily="Consolas"/>
+        <Button x:Name="btnMin" Content="X" HorizontalAlignment="Left" Margin="316,367,0,0" VerticalAlignment="Top" 
+            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btnMin_Click" FontFamily="Consolas"/>
+        <Button x:Name="btnMult" Content="X" HorizontalAlignment="Left" Margin="316,257,0,0" VerticalAlignment="Top" 
+            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btnMult_Click" FontFamily="Consolas"/>
+        <Button x:Name="btnDiv" Content="X" HorizontalAlignment="Left" Margin="316,422,0,0" VerticalAlignment="Top" 
+            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btnDiv_Click" FontFamily="Consolas"/>
+        <Button x:Name="btnEnter" Content="X" HorizontalAlignment="Left" Margin="260,422,0,0" VerticalAlignment="Top" 
+            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btnEnter_Click" FontFamily="Consolas"/>
+
+        <!-- HEX LETTERS -->
+        <Button x:Name="btnA" Content="X" HorizontalAlignment="Left" Margin="40,312,0,0" VerticalAlignment="Top" 
+            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn9_Click" FontFamily="Consolas"/>
+        <Button x:Name="btnB" Content="X" HorizontalAlignment="Left" Margin="40,367,0,0" VerticalAlignment="Top" 
+            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn9_Click" FontFamily="Consolas"/>
+        <Button x:Name="btnC" Content="X" HorizontalAlignment="Left" Margin="40,257,0,0" VerticalAlignment="Top" 
+            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn9_Click" FontFamily="Consolas"/>
+        <Button x:Name="btnD" Content="X" HorizontalAlignment="Left" Margin="96,312,0,0" VerticalAlignment="Top" 
+            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn9_Click" FontFamily="Consolas"/>
+        <Button x:Name="btnE" Content="X" HorizontalAlignment="Left" Margin="96,367,0,0" VerticalAlignment="Top" 
+            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn9_Click" FontFamily="Consolas"/>
+        <Button x:Name="btnF" Content="X" HorizontalAlignment="Left" Margin="96,257,0,0" VerticalAlignment="Top" 
+            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn9_Click" FontFamily="Consolas"/>
+
+        <!--Show Results-->
+        <!--#endregion-->
+
+        <Button x:Name="HEX" Content="HEX" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="19,20,0,0" Width="49" Height="50" FontFamily="Consolas" FontSize="20"/>
+        <Button x:Name="DEC" Content="DEC" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="19,75,0,0" Width="49" Height="50" FontFamily="Consolas" FontSize="20"/>
+        <Button x:Name="OCT" Content="OCT" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="19,130,0,0" Width="49" Height="50" FontFamily="Consolas" FontSize="20"/>
+        <Button x:Name="BIN" Content="BIN" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="19,184,0,0" Width="49" Height="50" FontFamily="Consolas" FontSize="20"/>
+
+        <TextBox x:Name="HexBox" Text="0" Width="315" Height="50" VerticalAlignment="Top" HorizontalAlignment ="Right" Margin="0, 20, 10, 0"
+                 HorizontalContentAlignment="Right" VerticalContentAlignment="Center" FontFamily ="Consolas" FontSize="30" Background="#F0F0F0	"/>
+        <TextBox x:Name="DecBox" Text="0" Width="315" Height="50" VerticalAlignment="Top" HorizontalAlignment ="Right" Margin="0,75,10,0"
+            HorizontalContentAlignment="Right" VerticalContentAlignment="Center" FontFamily ="Consolas" FontSize="30" Background="#F0F0F0"/>
+        <TextBox x:Name="OctBox" Text="0" Width="315" Height="50" VerticalAlignment="Top" HorizontalAlignment ="Right" Margin="0,130,10,0"
+            HorizontalContentAlignment="Right" VerticalContentAlignment="Center" FontFamily ="Consolas" FontSize="30" Background="#F0F0F0"/>
+        <TextBox x:Name="BinBox" Text="0" Width="315" Height="50" VerticalAlignment="Top" HorizontalAlignment ="Right" Margin="0,184,10,0"
+            HorizontalContentAlignment="Right" VerticalContentAlignment="Center" FontFamily ="Consolas" FontSize="30" Background="#F0F0F0"/>
 
     </Grid>
 </Window>
